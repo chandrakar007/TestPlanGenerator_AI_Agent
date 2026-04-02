@@ -1,0 +1,18 @@
+{
+  "name": "tools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test-jira": "node test_jira.js",
+    "test-groq": "node test_groq.js",
+    "test-ollama": "node test_ollama.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
