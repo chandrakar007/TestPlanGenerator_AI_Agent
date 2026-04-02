@@ -5,3 +5,4 @@ frontend/dist/
 backend/database.sqlite
 backend/*.db
 templates/
+storage/

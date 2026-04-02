@@ -24,7 +24,7 @@ app.use(cors());
 app.use(express.json());
 
 // Set up storage for templates
-const templatesDir = path.resolve(__dirname, '../../templates');
+const templatesDir = path.resolve(__dirname, '../storage/templates');
 if (!fs.existsSync(templatesDir)) {
     fs.mkdirSync(templatesDir, { recursive: true });
 }
