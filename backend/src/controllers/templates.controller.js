@@ -10,7 +10,7 @@ const pdfParse = require('pdf-parse');
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-export const templatesDir = path.resolve(__dirname, '../../../storage/templates');
+export const templatesDir = path.resolve(__dirname, '../../../../templates');
 
 if (!fs.existsSync(templatesDir)) {
     fs.mkdirSync(templatesDir, { recursive: true });

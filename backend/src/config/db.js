@@ -8,7 +8,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Ensure storage points to the proper project root relative to /src/config
-const dataDir = path.resolve(__dirname, '../../../storage/data'); 
+const dataDir = path.resolve(__dirname, '../../../storage/data');
 
 if (!fs.existsSync(dataDir)) {
     fs.mkdirSync(dataDir, { recursive: true });
@@ -18,7 +18,7 @@ let dbInstance = null;
 
 export async function initDB() {
     if (dbInstance) return dbInstance;
-    
+
     dbInstance = await open({
         filename: path.join(dataDir, 'app.db'),
         driver: sqlite3.Database
@@ -37,7 +37,7 @@ export async function initDB() {
             content TEXT
         );
     `);
-    
+
     return dbInstance;
 }
 
